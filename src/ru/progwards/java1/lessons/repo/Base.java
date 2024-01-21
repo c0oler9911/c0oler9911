@@ -1,48 +1,55 @@
 package ru.progwards.java1.lessons.repo;
+
 public class Base {
-    static String X_EQUALS ="x = ";
-    static String Y_EQUALS ="y = ";
-    static String A_EQUALS ="a = ";
-    static String B_EQUALS ="b = ";
-    static String C_EQUALS ="c = ";
-    public static int subtraction(int x, int y){
-        System.out.println("Вызвана функция subtraction() с параметрами " + X_EQUALS+x+", "+Y_EQUALS+y);
-        int z=x-y;
-        return z;
+    static String X_EQUALS = "x = ";
+    static String Y_EQUALS = "y = ";
+    static String A_EQUALS = "a = ";
+    static String B_EQUALS = "b = ";
+    static String C_EQUALS = "c = ";
+
+    public static int subtraction(int x, int y) {
+        System.out.println("Вызвана функция subtraction() с параметрами " + X_EQUALS + x + ", " + Y_EQUALS + y);
+        int ac = x - y;
+        return ac;
     }
+
     public static int addition(int x, int y) {
-        System.out.println("Вызвана функция addition() с параметрами " + X_EQUALS + x+", " + Y_EQUALS + y);
-        int z = x + y;
-        return z;
+        System.out.println("Вызвана функция addition() с параметрами " + X_EQUALS + x + ", " + Y_EQUALS + y);
+        int ac = x + y;
+        return ac;
     }
-    public static int multiplication(int x, int y){
-        System.out.println("Вызвана функция multiplication() с параметрами " + X_EQUALS+ x+", "+Y_EQUALS+y);
-        int z = x * y;
-        return z;
+
+    public static int multiplication(int x, int y) {
+        System.out.println("Вызвана функция multiplication() с параметрами " + X_EQUALS + x + ", " + Y_EQUALS + y);
+        int ac = x * y;
+        return ac;
     }
-    public static void calculation(){
-        int a=34;
-        int b=55;
-        System.out.println(A_EQUALS+a);
-        System.out.println(B_EQUALS+b);
-        int c=addition(a,b);
-        System.out.println(("a + b = ")+c);
-        c=subtraction(a,b);
-        System.out.println(("a - b = ")+c);
-        c=multiplication(a,b);
-        System.out.println(("a * b = ")+c);
+
+    public static void calculation() {
+        int a = 34;
+        int b = 55;
+        System.out.println(A_EQUALS + a);
+        System.out.println(B_EQUALS + b);
+        int c = addition(a, b);
+        System.out.println(("a + b = ") + c);
+        c = subtraction(a, b);
+        System.out.println(("a - b = ") + c);
+        c = multiplication(a, b);
+        System.out.println(("a * b = ") + c);
     }
+
     public static void calculation(int a, int b, int c) {
-        System.out.println("Вызвана функция calculation() с параметрами " + A_EQUALS +a+ ", " + B_EQUALS+b+ ", " + C_EQUALS+c);
-        int d = addition(addition(a,b),c);
+        System.out.println("Вызвана функция calculation() с параметрами " + A_EQUALS + a + ", " + B_EQUALS + b + ", " + C_EQUALS + c);
+        int d = addition(addition(a, b), c);
         System.out.println(("a + b + c = ") + d);
-        d = multiplication(multiplication(a, a),a);
+        d = multiplication(multiplication(a, a), a);
         System.out.println(("a^3 = ") + d);
         d = subtraction(a, addition(b, multiplication(c, c)));
         System.out.println(("a - (b + c^2) = ") + d);
 
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         subtraction(45,12);
         subtraction(23,55);
         addition(128,787);
@@ -52,5 +59,6 @@ public class Base {
         calculation();
         calculation(11,25,410);
         calculation(100,9,98);
-    }
-}
+            }
+        }
+
