@@ -10,7 +10,7 @@ public class Goodies {
         child = "Маше";
     }
     public static void cookie(){
-        goodies="печенье";
+        goodies="печеньку";
     }
     public static void setChild(String child){
         Goodies.child=child;

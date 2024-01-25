@@ -11,7 +11,7 @@ public class Room {
         return length*width;
     }
     public static void printRoom(String name, double square) {
-        System.out.println("Площадь " + name + " составляет " + square + "м2");
+        System.out.println("Площадь " + name + " составляет " + square + " м2");
     }
     public static void printFlat(){
         printRoom("кухни",square1);
