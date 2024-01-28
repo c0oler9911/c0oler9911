@@ -4,7 +4,8 @@ public class StringConverter {
     public static String fromByte(byte number){
         Byte num = Byte.parseByte(fromByte(number));
         String a = num.toString();
-        return a;
+        String fromByte = fromByte(number);
+        return fromByte;
     }
     public static String fromShort(long number){
         String b = fromShort(number);
@@ -26,5 +27,9 @@ public class StringConverter {
         String f = fromDouble(number);
         return f;
 }
+
+    public static void main(String[] args) {
+        System.out.println(fromDouble(1.0));
+    }
 
 }
