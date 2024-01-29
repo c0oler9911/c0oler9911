@@ -6,7 +6,9 @@ public class OneLine {
         return s1;
     }
     public static String intValue(String variable,  int value){
-        String s2= STR."Значение \{variable} равно \{value}";
+        Integer v=value;
+        String a=v.toString();
+        String s2="Значение "+variable+" равно "+a;
         return s2;
     }
     public static String square(int n){
