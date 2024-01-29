@@ -6,9 +6,7 @@ public class OneLine {
         return s1;
     }
     public static String intValue(String variable,  int value){
-        Integer n =value;
-        String a = n.toString();
-        String s2="Значение "+variable+" равно "+a;
+        String s2= STR."Значение \{variable} равно \{value}";
         return s2;
     }
     public static String square(int n){
@@ -25,7 +23,7 @@ public class OneLine {
         String a = n1.toString();
         Integer m1=m;
         String b = m1.toString();
-        int sum=n=m;
+        int sum=n+m;
         Integer sum1 = sum;
         String sum2 = sum1.toString();
         String s="Сумма "+a+" и "+b+ " равна "+sum2;

@@ -5,7 +5,7 @@ import static java.lang.Math.sqrt;
 public class Figures {
     static final double π=3.14;
     public static double circle(double r){
-        return π*r*r;
+        return r*r*π;
     }
     public static double square(double n){
         return n*n;
@@ -24,6 +24,6 @@ public class Figures {
     }
 
     public static void main(String[] args) {
-        System.out.println(triangleVsCircle(234));
+        System.out.println(squareVsCircle(4.97982125463533));
     }
 }
