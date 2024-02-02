@@ -4,6 +4,7 @@ public class Divisibility {
     public static void check(int num1, int num2){
         if (num2==0)
             System.out.println("На ноль делить нельзя");
+        else
         if (num1%num2==0)
             System.out.println(num1+" делится нацело на "+num2);
         else {
