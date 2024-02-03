@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.compare;
 
 public class TriangleInfo {
     public static boolean isTriangle(int a, int b, int c){
-        if (a>c+b|c>b+a|b>c+a)
+        if (a>=c+b|c>=b+a|b>=c+a)
             return false;
         else
             return true;
@@ -20,7 +20,7 @@ public class TriangleInfo {
             return false;
     }
     public static void main(String[] args) {
-        System.out.println(isTriangle(5,3,8));
+        System.out.println(isTriangle(5,4,1));
 
 
 
