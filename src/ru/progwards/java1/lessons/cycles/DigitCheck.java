@@ -12,6 +12,6 @@ public class DigitCheck {
     }
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(1453265246, 1));
+        System.out.println(containsDigit(0, 0));
     }
 }
