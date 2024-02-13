@@ -1,7 +1,4 @@
 package ru.progwards.java1.lessons.cycles;
-
-import ru.progwards.java1.lessons.custing.OneLine;
-
 public class NumbersRange {
     public static long sumNumbers(int start, int finish) {
         int sum = start;
