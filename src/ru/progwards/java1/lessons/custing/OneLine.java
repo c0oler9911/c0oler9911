@@ -12,10 +12,5 @@ public class OneLine {
     public static String sum(int n, int m){
         return "Сумма "+n+" и "+m+ " равна "+(n+m);
     }
-    public static void main(String[] args) {
-        System.out.println(strValue("1234"));
-        System.out.println(intValue("opapa",1245));
-        System.out.println(square(5));
-        System.out.println(sum(5,10));
-    }
+
 }
