@@ -14,7 +14,7 @@ public class DigitCheck {
     }
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(105, 5));
+        System.out.println(containsDigit(0, 5));
     }
 
 }
