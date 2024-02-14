@@ -12,20 +12,18 @@ public class GoldenFibo {
     public static boolean isGoldenTriangle(int a, int b, int c) {
         final double v = 1.61703;
         final double q = 1.61903;
-        double d = Math.sqrt(Math.pow(a, 2) - (Math.pow((Double.valueOf(c) / 2), 2)));
-        double e = Math.sqrt(Math.pow(a, 2) - (Math.pow((Double.valueOf(b) / 2), 2)));
-        double f = Math.sqrt(Math.pow(b, 2) - (Math.pow((Double.valueOf(a) / 2), 2)));
-        System.out.println("d=" + d);
-
-        if ((a == b) && (v < d) && (d > q) || ((a == c) && (v < e) && (e > d)) || ((b == c) && (v < f) && (f > q)))
+        if (a == b && (v >= Double.valueOf(a/c)) && (q <= Double.valueOf(a/c)))
             return true;
-        else
-            return false;
+        if (a == c && (v >= Double.valueOf(a/b)) && (q <= Double.valueOf(a/b)))
+           return true;
+        if (b == c && (v >= Double.valueOf(b/a)) && (q <= Double.valueOf(b/a)))
+        return true;
+return false;
     }
 
     public static void main(String[] args) {
         System.out.println(fiboNumber(7));
-        System.out.println(isGoldenTriangle(5, 5, 5));
+        System.out.println(isGoldenTriangle(34, 34, 55));
         int i;
         for (i = 1; i < 15; i++) {
             System.out.println(fiboNumber(i));
