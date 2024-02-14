@@ -34,8 +34,8 @@ public class GoldenFibo {
         int b;
         int c;
         for (i = 2; i < 15; i++) {
-            if (fiboNumber(i) <= 100 && (double)fiboNumber(i)/fiboNumber(i-1)>=v  && (double)fiboNumber(i)/fiboNumber(i-1)<=q )
-                System.out.println("a=  "+fiboNumber(i)+ "c=   "+fiboNumber(i-1));
+            if (fiboNumber(i)<=100 && isGoldenTriangle(fiboNumber(i), fiboNumber(i), fiboNumber(i-1))==true)
+                System.out.println("a = b = "+fiboNumber(i)+ ", c = "+fiboNumber(i-1));
         }
     }
 }
