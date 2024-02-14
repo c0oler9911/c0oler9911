@@ -27,13 +27,10 @@ public class GoldenFibo {
         System.out.println(fiboNumber(7));
         System.out.println(isGoldenTriangle(55, 55, 34));
         int i;
-        for (i = 1; i < 15; i++) {
+        for (i = 1; i < 15; i++)
             System.out.println(fiboNumber(i));
-        }
-        int a;
-        int b;
-        int c;
-        for (i = 2; i < 15; i++) {
+
+        for (i = 1; i < 15; i++) {
             if (fiboNumber(i)<=100 && isGoldenTriangle(fiboNumber(i), fiboNumber(i), fiboNumber(i-1))==true)
                 System.out.println("a = b = "+fiboNumber(i)+ ", c = "+fiboNumber(i-1));
         }
